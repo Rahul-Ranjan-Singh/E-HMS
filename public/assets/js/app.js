@@ -1,6 +1,6 @@
 /*
 Author       : Dreamguys
-Template Name: PreClinic - Medical and Hospital Admin Template
+Template Name: E-HMS
 Version      : 1.0
 */
 $(document).ready(function($) {

@@ -21,7 +21,7 @@ var con = mysql.createConnection({
     host : 'localhost',
     user : 'root',
     password : '',
-    database : 'nodelogin'
+    database : 'hms_db'
 });
 
 router.use(session({
@@ -57,14 +57,14 @@ router.post('/',[
                 request.session.loggedin = true ; 
                 request.session.username = username;
                 response.cookie('username' , username);
-                var status = results[0].email_status;
-                if (status=="not_verified" ){
-                    response.send("please verify your email");
-                }
-                else{
+                // var status = results[0].email_status;
+                // if (status=="not_verified" ){
+                //     response.send("please verify your email");
+                // }
+                // else{
                     sweetalert.fire('logged In!');
                     response.redirect('/home');
-                }
+                // }
                
             }else{
                 response.send('Incorrect username / password');

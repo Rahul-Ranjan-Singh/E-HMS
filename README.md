@@ -1,4 +1,4 @@
-# Hospital-Management
+# E-HMS Hospital-Management
 A hospital management system using nodejs , express , mysql , ejS
 
 First clone or Download the project
